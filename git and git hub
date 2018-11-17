@@ -5,4 +5,8 @@
   3.backup:will be stored in local machines as well as in the central server..
   4.analyze:give a description of when ,what modifications were made..
  -->vcs tools:
-  1.g
+  1.git
+  2.cvs
+  3.mercurial...
+ -->git:is a distributed version control tool
+ -->github:is a code hosting platform for version control collaboration
