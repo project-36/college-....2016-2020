@@ -20,3 +20,14 @@
   -->git add:lets u add files to index.
   -->git commit:refers to recording snapshots of the repo at a given time.committed snapshots will never change unless done explicitly.
   -->git commit -m "message"
+  -->git add -A:add all files to staging area .
+  -->git commit -a :commit all files.
+  -->git log:shows log..when u commited ..with what msg...what time..also the sha1 encryption.
+  -->parallel development:
+    -->branching:pointers to specific commit.  two types:
+                1.local branches 
+                2.remote tracking branches
+        -->git branch branchname: creates a branch with name "branchname"
+        -->git checkout branchname:switches to the branch "branchname"
+        
+                
