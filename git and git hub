@@ -10,3 +10,7 @@
   3.mercurial...
  -->git:is a distributed version control tool
  -->github:is a code hosting platform for version control collaboration
+ -->repository:is a directory or storage space where your program lives in.there are 2 types of repositories::
+    1.central
+    2.local
+    
