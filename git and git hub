@@ -33,6 +33,25 @@
       -->git merge branchname: merges branchname into the destinationbranch to which we have to checkout to ,before merging.
     3))rebasing:combining work between different branches.used to make linear sequence of commits.
    ----->>git pull = git fetch(fetches as a new branch) + git merge
-      
+       -->to get to previous version of your code:
+              --->>git log
+--------------------------------------------------------              
+commit 5479abe29c730bece310fba345c97af55323ac36
+Author: helloadish007 <helloadish007@gmail.com>
+Date:   Sun Nov 18 11:17:48 2018 +0530
+
+    t1 2nd commit
+
+commit bf4f2f890c4a5a09ab662667412dc793bcb5a160
+Author: helloadish007 <helloadish007@gmail.com>
+Date:   Sun Nov 18 11:17:11 2018 +0530
+
+    t1 1st commit
+---------------------------------------------------------    
+    
+  @suppose if i want to move to t1 file .....1st commit.............then copy 8 literals from commit
+  i.e-->> git checkout bf4f2f89 t1
+  it will return to previous version of t1....
+  
         
                 
