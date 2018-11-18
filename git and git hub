@@ -13,4 +13,10 @@
  -->repository:is a directory or storage space where your program lives in.there are 2 types of repositories::
     1.central
     2.local
-    
+  -->git init :initialises local repository in a specified path.
+  -->git remote add origin "link of your central repository":add remote repository as the origin.//link will be in clone or download button in your central repo.
+  -->git pull origin master:fetches all files from central repo.
+  -->git status:tells u which files are added to index and ready to commit.
+  -->git add:lets u add files to index.
+  -->git commit:refers to recording snapshots of the repo at a given time.committed snapshots will never change unless done explicitly.
+  -->git commit -m "message"
