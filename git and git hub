@@ -21,13 +21,18 @@
   -->git commit:refers to recording snapshots of the repo at a given time.committed snapshots will never change unless done explicitly.
   -->git commit -m "message"
   -->git add -A:add all files to staging area .
-  -->git commit -a :commit all files.
+  -->git commit -a :commit all files.//also if a file is added ...then after modification of that file can be also added and committed using this.
   -->git log:shows log..when u commited ..with what msg...what time..also the sha1 encryption.
   -->parallel development:
-    -->branching:pointers to specific commit.  two types:
+    1)branching:pointers to specific commit.  two types:
                 1.local branches 
                 2.remote tracking branches
         -->git branch branchname: creates a branch with name "branchname"
         -->git checkout branchname:switches to the branch "branchname"
+    2)merging:combining work of different branches together.    
+      -->git merge branchname: merges branchname into the destinationbranch to which we have to checkout to ,before merging.
+    3))rebasing:combining work between different branches.used to make linear sequence of commits.
+   ----->>git pull = git fetch(fetches as a new branch) + git merge
+      
         
                 
