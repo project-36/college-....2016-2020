@@ -128,9 +128,11 @@ dingco
 
 
 t=int(input())
+l=[]
 for z in range(t):
-    s=str(input())
-    n=int(input())
+    l=input().split(' ')
+    s=l[0]
+    n=int(l[1])
     if(n<=0):
         print(s[-n:]+s[:-n])
     else:
