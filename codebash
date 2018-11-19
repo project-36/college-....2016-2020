@@ -1,0 +1,102 @@
+Write a program to translate an english sentence in to pig latin. Pig latin is a language game of alterations played in english. The purpose is to obfuscate the language. It is a form of encoding. You can learn more about it on wikipedia. However, for the purpose of this exercise, the rules of translation are changed slightly and are as follows:
+a) Each word of the sentence is to be translated
+b) If the word starts with a vowel, then add ‘ay’ to the end of the word
+c) If the word starts with a consonant, then move it to the end of the word and add ‘ay’
+
+INPUT:
+
+    First line will contain T, number of testcases. Then the testcases follow.
+    Each test case will have a single string S
+
+OUTPUT:
+
+    For each test case, output a single result string.
+
+SAMPLE INPUT
+
+2
+apple is not red
+The sky is blue
+
+SAMPLE OUTPUT
+
+appleay isay otnay edray
+heTay kysay isay luebay
+
+
+
+code:
+n=int(input())
+for z in range(n):
+    s=str(input()).split(' ')
+  
+    for k in range(len(s)):
+        i = s[k]
+
+        
+        if i[0] in ['a', 'e', 'i', 'o', 'u','A','E','I','O','U']:
+            s[k] = i+'ay'
+        else:
+            s[k]=i[1:]+i[0]+'ay'
+    print(' '.join(s))
+    s.clear()
+2.Phonetic Alphabet
+Max. Marks: 40
+
+Write a program that will convert a text string into ‘phonetic alphabet’ and back. The phonetic
+alphabet is used when spelling words out. The list below is the standard NATO phonetic alphabet for
+English. Any numbers should be printed out as words. The first input to the program will be either
+‘english’ or ‘phonetic’ to indicate whether the following text is in english or in phonetic alphabet. The
+conversion should happen accordingly
+
+
+Example: PYTHON 27 ----> Papa Yankee Tango Hotel Oscar November Two Seven}
+
+INPUT:
+
+    First line will contain T, number of testcases. Then the testcases follow.
+    Each test case will have 2 lines. The first line will be used to indicate whether the input is in english or phonetic alphabet.
+    The second line will contain the string S to be converted.
+
+OUTPUT:
+
+    For each test case, output a single result string.
+
+ 
+
+* The spellings of the phonetic alphabet should be exactly the same as the list in the question. ie. The first letter of each word should be capitalized.
+* Only numbers and alphabets will be used in test cases. No special characters.
+* Note that, in English, only the frst letter is capital and in Phonetics, the first letter of each word is capitalized.
+SAMPLE INPUT
+
+2
+english
+Python27
+phonetic
+Papa Yankee Tango Hotel Oscar November Two Seven
+
+SAMPLE OUTPUT
+
+Papa Yankee Tango Hotel Oscar November Two Seven
+Python27
+
+code:
+n=int(input())
+l=[]
+dicto={
+"A":"Alpha","B":"Bravo","C":"Charlie","D":"Delta","E":"Echo","F":"Foxtrot","G":"Golf","H":"Hotel","I":"India","J":"Juliet","K":"Kilo","L":"Lima","M":"Mike",
+"N":"November","O":"Oscar","P":"Papa","Q":"Quebac","R":"Romeo","S":"Sierra","T":"Tango","U":"Uniform","V":"Victor","W":"Whiskey","X":"Xray","Y":"Yankee",
+"Z":"Zulu","0":"Zero","1":"One","2":"Two","3":"Three","4":"Four","5":"Five","6":"Six","7":"Seven","8":"Eight","9":"Nine"}
+for i in range (n):
+	a=input()
+	if (a=="english"):
+		k=input().upper()
+		print(" ".join(map(dicto.get,k)))
+	elif (a=="phonetic"):
+		s=input().split(" ")
+		for g in s:
+			for j,k in dicto.items():
+				if (g==k):
+					l.append(j)
+		print("".join(l).capitalize())
+		l.clear()
