@@ -1,0 +1,89 @@
+factorial
+
+
+ORG 0000
+MOV R1,#02H
+MOV A,#01H
+LOOP: MOV B,R1
+           MUL AB
+           DJNZ R1,LOOP
+MOV R2,A
+END
+--------------------------------------------------------
+fibanocci
+
+
+ORG 0000h
+LJMP l1
+ORG 40h
+l1:  MOV R0,#20H    
+       MOV R3,#8     
+       MOV R1,#00H
+       MOV @R0,#0H    
+       INC R0
+       MOV @R0,#01H   
+       MOV R2,#01H
+l2:INC R0
+       MOV A,R1
+       ADD A,R2       
+       MOV @R0,A      
+       MOV B,R2       
+       MOV R1,B
+       MOV R2,A
+       DJNZ R3,l2 ;
+       END
+ ---------------------------------------------
+ hcf
+ 
+  org 0000h
+      ljmp main
+      org 40h
+main: mov R1,#09       ; The first number to find gcd
+      mov R2,#06       ; The second number to find gcd
+      mov a,R1
+      mov b,R2
+      cjne a,b,next    ; compares and jumps to assign proper registers
+      ljmp stop        ; if two numbers are equal it assigns the same number to the result register
+next: jnc loop         ; if num1>num2 it jumps to loop
+      mov a,R2         ; if num1<num2 it assigns the registers in reverse way
+      mov b,R1
+loop: mov R3,b         ; temperorily storing the second register in r4
+      div ab
+      mov a,R3  
+      mov R7,b         ; storing the remainder in r7
+      cjne R7,#00h,loop; the loop repeats till the remainder is zero
+stop : mov R4,a        ; Stores the result in r4
+       end
+ --------------------------------------------------------
+ lcm
+ 
+  org 0000h
+      ljmp main
+      org 40h
+main: mov R1,#09       ; The first number to find gcd
+      mov R2,#06       ; The second number to find gcd
+      mov a,R1
+      mov b,R2
+      cjne a,b,next    ; compares and jumps to assign proper registers
+      ljmp stop        ; if two numbers are equal it assigns the same number to the result register
+next: jnc loop         ; if num1>num2 it jumps to loop
+      mov a,R2         ; if num1<num2 it assigns the registers in reverse way
+      mov b,R1
+loop: mov R3,b         ; temperorily storing the second register in r4
+      div ab
+      mov a,R3  
+      mov R7,b         ; storing the remainder in r7
+      cjne R7,#00h,loop; the loop repeats till the remainder is zero
+stop : mov R4,a        ; Stores the result in r4
+       end
+---------------------------------------------------------------
+square
+
+ORG 0000
+MOV R0,#02H
+MOV A,R0
+MOV B,R0
+MUL AB
+MOV R1,A
+MOV R2,B
+END
