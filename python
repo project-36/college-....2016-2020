@@ -1,0 +1,15 @@
+1.LCM AND HCF 
+
+x=a=int(input("FIRST NUMBER "))
+y=b=int(input("SECOND NUMBER "))
+while(y):
+    x,y=y,x%y
+hcf=x
+print("hcf is ",hcf)
+print("lcm is ",(a*b)/hcf)
+
+OUT:
+FIRST NUMBER 2
+SECOND NUMBER 4
+hcf is  2
+lcm is  4.0
