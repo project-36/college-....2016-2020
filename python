@@ -13,3 +13,14 @@ FIRST NUMBER 2
 SECOND NUMBER 4
 hcf is  2
 lcm is  4.0
+
+2.write a method which removes any given character fom a string?
+
+i=k=input("enter the string ")
+j=input("enter the string to be deleted ")
+​
+print(i.replace(j,""))
+O/P:
+enter the string cheat
+enter the string to be deleted e
+chat
