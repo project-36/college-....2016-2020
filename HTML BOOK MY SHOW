@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>BOOK MY SHOW </title>
+</head>
+<BODY STYLE="BACKGROUND-COLOR:SILVER">
+<h1> <font color="BROWN"><B><I> BOOK MY SHOW!!</FONT></I></B> </H1>
+<br><hr><hr><br><br>
+<font color="BROWN"><marquee><B><I>WELCOME TO THE WORLD OF MOVIE TICKET BOOKING!!</I></B> </marquee></font>
+<br><br>
+<hr>
+<h2><U>NEWLY RELEASED MOVIES</U> </H2>
+<IMG src="/home/it3/Desktop/1.jpg" height="200" width="400">
+<IMG src="/home/it3/Desktop/2.jpeg" height="200" width="400"> 
+<br><hr><hr>
+<font color="BLACK"><h3><U>ABOUT US</U></H3></FONT>
+<font color="WHITE">
+<P>
+BookMyShow was founded by Ashish Hemrajani, Parikshit Dar and Rajesh Balpande, all three alumni of Sydenham Institute of Management, Mumbai University. They had been working for J.W. Thompson, SPAR and Chatterjee Soros Group, respectively. In 2007 they officially came up with the BookMyShow website. The major purpose of this start-up was to bring the concept of online movie ticketing to India. And soon as it expanded, it started offering online ticketing solutions for theaters, events, concerts and sports.
+</P></FONT>
+<OBJECT ALIGN="MIDDLE"><h3> JOIN US </H3></OBJECT>
+<A HREF="/home/it3/Desktop/b.html"  target="_blank"><IMG src="/home/it3/Desktop/5.jpg" height="100" width="100"></A><BR><HR>
+<FOOTER>CONTACT US ON FACEBOOOK ,TWITTER </FOOTER>
+</BODY>
+</html>
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>BOOK MY SHOW </title>
+</head>
+<BODY STYLE="BACKGROUND-COLOR:SILVER">
+<h1> <B><I> SIGN UP WITH US!!</I></B> </H1>
+<br><hr><hr><br><br>
+<font color="white"><marquee><B><I>WELCOME TO THE WORLD OF MOVIE TICKET BOOKING!!</I></B> </marquee></font>
+<br><br>
+<hr>
+<form method="post" AUTOCOMPLETE="ON" action="/home/it3/Desktop/i">
+<HR><HR><br>
+NAME:<input type="text" placeholder="enter your name" size="10"><BR><BR>
+<label>AGE:<input type="text" placeholder="age" size="1"></label><BR><BR>
+LOCALITY:<input type="TEXT" placeholder="enter your residence place" ><BR><BR>
+DATE OF BIRTH:<input type="date" >
+<BR><HR>
+<h2>CHOOSE YOUR MOVIE CHOICE </H2>
+<UL>
+<LI>ACTION<input type="RADIO" NAME="ACTION" ><BR><BR></LI>
+<LI>ADVENTURE<input type="RADIO" NAME="AD" ><BR><BR></LI>
+<LI>MYSTERY<input type="RADIO" NAME="MY" ><BR><BR></LI>
+<LI>COMEDY<input type="RADIO" NAME="COM" ><BR><BR></LI>
+<LI>ANIME<input type="RADIO" NAME="ANIME" ><BR><BR></LI>
+</UL><HR>
+<BR>
+<BR>
+SELECT YOUR GENDER:<BR><BR>
+MALE:<input type="CHECKBOX" NAME="ACTION" ><BR><BR>
+FEMALE:<input type="CHECKBOX" NAME="ACTION" >
+<BR><BR><BR><HR>
+COMMENTS HERE:<BR><BR>
+<TEXTAREA> YOUR PREFERENCES </TEXTAREA><BR><BR>
+ENTER YOUR LANGUAGE:
+<SELECT NAME="LAN">
+<OPTION SELECTED >ENGLISH</OPTION>
+<OPTION  >TAMIL</OPTION>
+<OPTION>MALAYALAM</OPTION>
+<OPTION>HINDI</OPTION></SELECT>
+ <BR>
+<input type="SUBMIT" NAME="ANIME" VALUE="SUBMIT"  ><BR><BR>
+ 
+
+</FORM>
+</html>
