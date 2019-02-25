@@ -3,26 +3,42 @@
 <head>
 <title>BOOK MY SHOW </title>
 </head>
-<BODY STYLE="BACKGROUND-COLOR:SILVER">
-<h1> <font color="BROWN"><B><I> BOOK MY SHOW!!</FONT></I></B> </H1>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<BODY 	>
+
+<div class="w3-bar w3-red">
+  <a href="#" class="w3-bar-item w3-button w3-mobile"><strong>BOOK MY SHOW</strong></a></DIV>
+</div>
 <br><hr><hr><br><br>
 <font color="BROWN"><marquee><B><I>WELCOME TO THE WORLD OF MOVIE TICKET BOOKING!!</I></B> </marquee></font>
 <br><br>
 <hr>
-<h2><U>NEWLY RELEASED MOVIES</U> </H2>
-<IMG src="/home/it3/Desktop/1.jpg" height="200" width="400">
-<IMG src="/home/it3/Desktop/2.jpeg" height="200" width="400"> 
+<h2>NEWLY RELEASED MOVIES </H2>
+<a href="/home/it3/Desktop/e.html"><IMG src="/home/it3/Desktop/1.jpg" height="200" width="400"></a>
+<IMG src="/home/it3/Desktop/sea.jpg" height="200" width="400"> 
+<IMG src="/home/it3/Desktop/bh.jpg" height="200" width="400">
 <br><hr><hr>
-<font color="BLACK"><h3><U>ABOUT US</U></H3></FONT>
-<font color="WHITE">
+<font color="BLACK"><h3>ABOUT US</H3></FONT>
+<font color="brown">
 <P>
 BookMyShow was founded by Ashish Hemrajani, Parikshit Dar and Rajesh Balpande, all three alumni of Sydenham Institute of Management, Mumbai University. They had been working for J.W. Thompson, SPAR and Chatterjee Soros Group, respectively. In 2007 they officially came up with the BookMyShow website. The major purpose of this start-up was to bring the concept of online movie ticketing to India. And soon as it expanded, it started offering online ticketing solutions for theaters, events, concerts and sports.
 </P></FONT>
-<OBJECT ALIGN="MIDDLE"><h3> JOIN US </H3></OBJECT>
-<A HREF="/home/it3/Desktop/b.html"  target="_blank"><IMG src="/home/it3/Desktop/5.jpg" height="100" width="100"></A><BR><HR>
-<FOOTER>CONTACT US ON FACEBOOOK ,TWITTER </FOOTER>
+<center>
+<centre><h3> JOIN US </H3></centre>
+<A HREF="/home/it3/Desktop/b.html"  target="_blank"><IMG src="/home/it3/Desktop/join.jpg" height="100" width="100"></A><BR><HR></center>
+<FOOTER>
+<center>
+<details>
+<summary> copyright &copy </summary>
+  <p> book my show. All Rights Reserved.</p>
+  <p>All content and graphics on this web site are the property of the book my show entertainment.</p>
+</details>
+CONTACT US ON FACEBOOOK ,TWITTER</center> </FOOTER>
 </BODY>
 </html>
+
+
+
 
 
 
@@ -31,18 +47,37 @@ BookMyShow was founded by Ashish Hemrajani, Parikshit Dar and Rajesh Balpande, a
 <head>
 <title>BOOK MY SHOW </title>
 </head>
-<BODY STYLE="BACKGROUND-COLOR:SILVER">
-<h1> <B><I> SIGN UP WITH US!!</I></B> </H1>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<BODY>
+<div class="w3-bar w3-red">
+  <a href="#" class="w3-bar-item w3-button w3-mobile"><strong>BOOK MY SHOW</strong></a></DIV>
+</div>
+
+<div class="w3-bar w3-black">
+  <a href="#" class="w3-bar-item w3-button w3-mobile"><strong> SIGN UP WITH US!!</strong></a></DIV>
+
 <br><hr><hr><br><br>
-<font color="white"><marquee><B><I>WELCOME TO THE WORLD OF MOVIE TICKET BOOKING!!</I></B> </marquee></font>
+<font color="red"><marquee><B><I>WELCOME TO THE WORLD OF MOVIE TICKET BOOKING!!</I></B> </marquee></font>
 <br><br>
 <hr>
-<form method="post" AUTOCOMPLETE="ON" action="/home/it3/Desktop/i">
+<form method="post" AUTOCOMPLETE="ON" action="/home/it3/Desktop/s.html">
 <HR><HR><br>
-NAME:<input type="text" placeholder="enter your name" size="10"><BR><BR>
-<label>AGE:<input type="text" placeholder="age" size="1"></label><BR><BR>
-LOCALITY:<input type="TEXT" placeholder="enter your residence place" ><BR><BR>
-DATE OF BIRTH:<input type="date" >
+<table border=2>
+<table bgcolor="white">	
+<tr>
+<td>NAME:&nbsp</td><td><input type="text" placeholder="name" size="10"></td>
+</tr>
+<tr>
+<td>PASSWORD:&nbsp</td><td><input type="PASSWORD" placeholder="password" PATTERN ="[0-9A-Za-z]" title="should contain 8 characters and numbers" size="10"></td>
+</tr>
+<tr>
+<td>AGE:&nbsp</td><td><input type="text" placeholder="age" size="1"></td></tr>
+<tr>
+<td>LOCALITY:&nbsp</td><td><input type="TEXT" placeholder="enter your residence place" ></td></tr>
+<tr>
+<td>DATE OF BIRTH:&nbsp</td><td><input type="date" ></td></tr>
+<tr>
+<td>EMAIL:&nbsp</td><td><input type="email" placeholder="email@.com" ></td></tr></table>
 <BR><HR>
 <h2>CHOOSE YOUR MOVIE CHOICE </H2>
 <UL>
@@ -71,4 +106,111 @@ ENTER YOUR LANGUAGE:
  
 
 </FORM>
+
+
+</html>
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>BOOK MY SHOW </title>
+<style>
+h1{
+border-left: 20px solid red;
+background-color:grey;
+color:white;
+}
+div{
+
+border:5px solid red ;
+border-left:20px solid red;
+padding:5px;
+}
+
+.g{
+overflow:auto;
+}
+</style>
+</head>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<BODY>
+<div class="w3-bar w3-red">
+  <a href="#" class="w3-bar-item w3-button w3-mobile"><strong>BOOK MY SHOW</strong></a></DIV>
+</div>
+<br><hr><hr><br><br>
+<font color="BROWN"><marquee><B><I>WELCOME TO THE WORLD OF MOVIE TICKET BOOKING!!</I></B> </marquee></font>
+
+<br>
+<centre><img src="/home/it3/Desktop/the.jpg" height="100" width="100" ></centre><br>
+<hr>
+<h1>LIST OF RUNNING THEATRES</h1><br>
+<a href="#2"><IMG src="/home/it3/Desktop/bb.png" height="50" width="50"></a>
+<br><br>
+<div class="g">
+<h6 style="color:brown"><B>THEATRE 1</B></h6><br>
+PLACE:TVM
+
+</DIV><BR>
+<div>
+<h6 style="color:brown"><B>THEATRE 2</B></h6><br>
+PLACE:TVM
+</DIV><BR>
+<div>
+<h6 style="color:brown"><B>THEATRE 3</B></h6><br>
+PLACE:TVM
+</DIV><BR>
+<div>
+<h6 style="color:brown"><B>THEATRE 4</B></h6><br>
+PLACE:ATTINGAL
+</DIV><BR>
+<div>
+<h6 style="color:brown"><B>THEATRE 5</B></h6><br>
+PLACE:TLY
+</DIV><BR>
+<div>
+<h6 style="color:brown" id="2"><B>THEATRE 6</B></h6><br>
+PLACE:GREENFIELD
+</DIV><BR>
+<FOOTER>
+<center>
+<details>
+<summary> copyright &copy </summary>
+  <p> book my show. All Rights Reserved.</p>
+  <p>All content and graphics on this web site are the property of the book my show entertainment.</p>
+</details>
+CONTACT US ON FACEBOOOK ,TWITTER</center> </FOOTER>
+</BODY>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>BOOK MY SHOW </title>
+</head>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<BODY 	>
+
+<div class="w3-bar w3-red">
+  <a href="#" class="w3-bar-item w3-button w3-mobile"><strong>BOOK MY SHOW</strong></a></DIV>
+</div>
+<br><hr><hr><br><br>
+<font color="BROWN"><marquee><B><I>WELCOME TO THE WORLD OF MOVIE TICKET BOOKING!!</I></B> </marquee></font>
+<br><br>
+<hr>
+<centre>
+<img src="/home/it3/Desktop/t.jpeg">
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<FOOTER>
+<center>
+<details>
+<summary> copyright &copy </summary>
+  <p> book my show. All Rights Reserved.</p>
+  <p>All content and graphics on this web site are the property of the book my show entertainment.</p>
+</details>
+CONTACT US ON FACEBOOOK ,TWITTER</center> </FOOTER>
+</BODY>
 </html>
