@@ -1,0 +1,82 @@
+n=int(input("enter your old salary: "))
+h=float(input("enter the percentage hike: "))
+new_salary=n+(n*(h/100.0))
+print("new salary is {}".format(new_salary))
+
+out:
+enter your old salary: 200
+enter the percentage hike: 100
+new salary is 400.0
+
+
+
+--------------------------------------------------------------------
+
+print("welcome to mortgage payment calculator!")
+print("")
+p=int(input("enter the principal amount : "))
+ar=int(input("enter  the annual percentage rate charged on the loan : "))
+yterm=int(input("enter the number of years of the loan : "))
+print("")
+mr=int(input("enter  the monthly percentage rate charged on the loan : "))
+mterm=int(input("enter the number of years of the loan : "))
+mcy=p*ar/(1-(ar+1)**(-yterm))
+mcm=p*mr/(1-(mr+1)**(-mterm))
+print("the annual mortgage payment will be: {}".format(mcy))
+        
+print("the monthly mortgage payment will be: {}".format(mcm))
+                
+                
+ out:
+welcome to mortgage payment calculator!
+
+enter the principal amount : 200
+enter  the annual percentage rate charged on the loan : 4
+enter the number of years of the loan : 3
+
+enter  the monthly percentage rate charged on the loan : 2
+enter the number of years of the loan : 3
+the annual mortgage payment will be: 806.4516129032259
+the monthly mortgage payment will be: 415.38461538461536
+
+------------------------------------------------------------------------------
+
+import math
+h=12
+ap=350
+lw=int(input("enter the dimensions of living room : "))
+dw=int(input("enter the dimensions of dining room : "))
+kw=int(input("enter the dimensions of kitchen  : "))
+mbw=int(input("enter the dimensions of master bed room : "))
+o1w=int(input("enter the dimensions of  room1 : "))
+o2w=int(input("enter the dimensions of room2 : "))
+al=math.ceil(h*lw*5/ap)
+ad=math.ceil(h*dw*5/ap)
+ak=math.ceil(h*kw*5/ap)
+amb=math.ceil(h*mbw*5/ap)
+ao1=math.ceil(h*o1w*5/ap)
+ao2=math.ceil(h*o2w*5/ap)
+total=math.ceil(al+ad+ak+amb+ao1+ao2)
+print("the number of buckets of paint needed to paint living room is : {}".format(al))
+print("the number of buckets of paint needed to paint dining room is : {}".format(ad))
+print("the number of buckets of paint needed to paint kitchen is : {}".format(ak))
+print("the number of buckets of paint needed to paint master bed room is : {}".format(amb))
+print("the number of buckets of paint needed to paint room1 is : {}".format(ao1))
+print("the number of buckets of paint needed to paint room2 is : {}".format(ao2))
+print("the number of buckets of paint needed to paint ALL  ROOMS is : {}".format(total))
+
+output:
+
+enter the dimensions of living room : 12
+enter the dimensions of dining room : 17
+enter the dimensions of kitchen  : 13
+enter the dimensions of master bed room : 12
+enter the dimensions of  room1 : 14
+enter the dimensions of room2 : 15
+the number of buckets of paint needed to paint living room is : 3
+the number of buckets of paint needed to paint dining room is : 3
+the number of buckets of paint needed to paint kitchen is : 3
+the number of buckets of paint needed to paint master bed room is : 3
+the number of buckets of paint needed to paint room1 is : 3
+the number of buckets of paint needed to paint room2 is : 3
+the number of buckets of paint needed to paint ALL  ROOMS is : 18
