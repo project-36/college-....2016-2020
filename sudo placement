@@ -1,0 +1,18 @@
+
+t=int(input())
+for z in range (t):
+    s=int(input())
+    l=input().split(' ')
+    o=[]
+    y=len(l)-1
+    x=len(l)
+    for i in range(y):
+        if (l[i+1]<l[i]):
+            g=l[i+1]
+            o.append(g)
+        else:
+            o.append("-1")
+    o.append("-1")
+    print(" ".join(o))
+    o.clear()
+    
