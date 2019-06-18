@@ -16,3 +16,22 @@ for z in range (t):
     print(" ".join(o))
     o.clear()
     
+    
+    -----------------------------------------------
+    crct
+    
+    p=int(input())
+for k in range(p):
+	d=int(input())
+	v=input().split()
+	a=[]
+	b=" "
+	for i in range(len(v)-1):
+		if int(v[i])>int(v[i+1]):
+			a.append(v[i+1])
+		else:
+			a.append("-1")
+	a.append("-1")
+	s=b.join(a)
+	print(s)
+	a.clear()
