@@ -36,6 +36,28 @@ for z in range (t):
     print(" ".join(l2))
     l1.clear()
     l2.clear()
+    
+    
+  leaders in an array:
+  
+  
+  t=int(input())
+for z in range (t):
+    s=int(input())
+    l=input().split()
+    o=[]
+    for i in range(len(l)):
+        for j in range(i+1,len(l)):
+            if(int(l[i])<=int(l[j])):
+                break
+       
+        if(j==len(l)-1):
+            o.append(l[i])
+    print(" ".join(o))
+    o.clear()
+    
+    
+    
 
         
 
