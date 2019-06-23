@@ -56,6 +56,28 @@ for z in range (t):
     print(" ".join(o))
     o.clear()
     
+    reverse array in groups:
+    
+    
+    t=int(input())
+for z in range (t):
+    s=input().split()
+    l=input().split()
+    d=int(s[1])
+    l1=[]
+    l2=[]
+    t=[]
+    p=[]
+    for i in range(0,len(l),d):
+        l1.append(l[i:i+d])
+    for i in range(len(l1)):
+        l2.extend(l1[i][::-1])
+    print(" " .join(l2))
+    l1.clear()
+    l2.clear()
+    l.clear()
+    
+    
     
     
 
