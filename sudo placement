@@ -99,6 +99,39 @@ for z in range(t):
     o.extend(e)
     print(" ".join(o))
 
+
+find the fine:
+
+
+
+t=int(input())
+for z in range(t):
+    s=input().split()
+    l=input().split()
+    p=input().split()
+    o=[]
+    e=[]
+    tp=0
+    for i in range(len(l)):
+        if(int(l[i])%2==0):
+            e.append(i)
+        else:
+            o.append(i)
+    if(int(s[1])%2==0):
+        for i in range(len(o)):
+            tp=tp+int(p[int(o[i])])
+    else:
+          for i in range(len(e)):
+            tp=tp+int(p[int(e[i])])
+    print(tp)
+    o.clear()
+    l.clear()
+    e.clear()
+    tp=0
+    
+        
+            
+        
     
         
     
