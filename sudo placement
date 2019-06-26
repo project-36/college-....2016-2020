@@ -129,6 +129,25 @@ for z in range(t):
     e.clear()
     tp=0
     
+maximum of all subarrays of size k 
+    
+    t=int(input())
+for z in range(t):
+    s=input().split()
+    l=input().split()
+    n=len(l)
+    k=int(s[1])
+    o=[]
+    for i in range(n-k+1):
+        m=max(map(int,l[i:i+k]))
+        o.append(m)
+    print(" ".join(map(str,o)))
+    
+        
+            
+        
+    
+    
         
             
         
