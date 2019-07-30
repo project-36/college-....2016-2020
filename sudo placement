@@ -179,6 +179,14 @@ for z in range(t):
             i+=1
             j-=1
     print("".join(s))
+    
+  Reverse words in a string:
+  
+  t=int(input())
+for z in range(t):
+    l=input().split(".")
+    print('.'.join(l[-1::-1]))
+    l.clear()
         
             
         
