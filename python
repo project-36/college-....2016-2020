@@ -45,3 +45,8 @@ if(int(str(n)[:1])==0 or int(str(n)[1:])==0):
     print("sry")
 else:
     print(str(n)[::-1])
+-----------------------------------------------------------
+5.convert binary to decimal
+-----------------------------------------------------------
+x=int(input(),2)
+print("decimal equivalent of {} is {}".format(k,x))
