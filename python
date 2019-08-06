@@ -50,3 +50,13 @@ else:
 -----------------------------------------------------------
 x=int(input(),2)
 print("decimal equivalent of {} is {}".format(k,x))
+------------------------------------------------------------
+6.print alternate odd and even sum of digits
+------------------------------------------------------------
+k=input()
+x=list(k)
+n=list(map(int,x))
+print("the summ of odd indices is {}".format(sum(n[::2])))
+print("the summ of even indices is {}".format(sum(n[1::2])))
+
+--------------------------------------------------------------
