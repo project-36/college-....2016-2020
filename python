@@ -60,3 +60,22 @@ print("the summ of odd indices is {}".format(sum(n[::2])))
 print("the summ of even indices is {}".format(sum(n[1::2])))
 
 --------------------------------------------------------------
+7.numerator=int(input())
+denominator=int(input())
+sign = '-' if numerator * denominator < 0 else ''
+number, rem = divmod(abs(numerator), abs(denominator))
+seen = {}
+tail = ''
+while rem > 0:
+    if rem in seen:
+        break
+    seen[rem] = len(tail)
+    n, rem = divmod(rem * 10, abs(denominator))
+    tail += str(n)
+    result = sign + str(number) + '.'
+    if rem <= 0:
+        result += tail
+    else:
+        print("tail of seen[rem] is {}".format(tail[:seen[rem]]))
+        result += tail[:seen[rem]] + '(' + tail[seen[rem]:] + ')'
+    print(result.rstrip('.'))
