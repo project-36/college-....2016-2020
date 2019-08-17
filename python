@@ -60,7 +60,30 @@ print("the summ of odd indices is {}".format(sum(n[::2])))
 print("the summ of even indices is {}".format(sum(n[1::2])))
 
 --------------------------------------------------------------
-7.numerator=int(input())
+7.sexy prime
+--------------------------------------------------------------
+import math
+l=[]
+x=int(input())
+y=int(input())
+for i in range(x,y+1):
+    if (i>1):
+        for j in range(2,int(math.sqrt(i))+1):
+            if(i%j==0):
+                break
+        else:
+            l.append(i)
+for i in range(len(l)):
+    j=i+1
+    for j in range(len(l)):
+        if(l[j]-l[i]==6):
+            print("({},{})".format(l[i],l[j]))
+            
+
+
+
+
+numerator=int(input())
 denominator=int(input())
 sign = '-' if numerator * denominator < 0 else ''
 number, rem = divmod(abs(numerator), abs(denominator))
