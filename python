@@ -78,6 +78,28 @@ for i in range(len(l)):
     for j in range(len(l)):
         if(l[j]-l[i]==6):
             print("({},{})".format(l[i],l[j]))
+------------------------------------------------------------------
+8.Multiply  the other elements of a list :
+--------------------------------------------------------------------
+b=[1,2,3,4,5]
+l=[]
+def f1(a):
+    l=[]
+    def mt(myList) : 
+        result = 1
+        for x in myList: 
+             result = result * x  
+        return result  
+    for i in range(len(a)):
+        if (i==0):
+            l.append(mt(a[1:]))
+        else:
+            l.append(mt(a[0:i])*mt(a[i+1:]))
+    return l
+
+
+f1(b)
+----------------------------------------------------------------------
             
 
 
