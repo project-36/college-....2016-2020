@@ -1,0 +1,90 @@
+PYTHON FEATURES:
+-----------------
+1.gui support
+2.cross platform language
+3.interpreted language
+4.Python is a case-sensitive language
+5.Python is a type inferred language;
+-----------------------
+Interpreter:	
+============
+Translates program one statement at a time.
+Compiler:
+=========
+Scans the entire program and translates it as a whole into machine code.
+-----------------------
+COMMENTS:
+----------
+way to increase the readability of your code is by using comments!
+EG:
+1.using triple quotes 
+"""
+If I really hate pressing `enter` and
+typing all those hash marks, I could
+just do this instead
+"""
+2.using hash
+#THIS IS A COMMENT
+shorcut:select all text to be commented and ^ctrl +/
+------------------------
+PYTHON KEYWORDS
+------------------------
+Keywords are the reserved words in Python.
+In Python, keywords are case sensitive.
+EG:
+False	class	return
+None	continue	for	lambda	try
+True	def	from	while
+and	del	global	not	with
+as	elif	if	or	yield
+assert	else	import	pass	 
+break	except	in	raise	
+-------------------------
+PYTHON IDENTIFIERS:
+--------------------------
+An identifier is a name given to entities like class, functions, variables, etc. 
+It helps to differentiate one entity from another.
+-------------------
+Rules for writing identifiers:
+==============================
+1.Identifiers can be a combination of letters in lowercase (a to z) or uppercase (A to Z) or digits (0 to 9) or an underscore _.
+Names like myClass, var_1 and print_this_to_screen, all are valid example.
+2.An identifier cannot start with a digit. 1variable is invalid, but variable1 is perfectly fine.
+3.Keywords cannot be used as identifiers.
+--------------------------
+PYTHON VARIABLES:
+----------------------
+A variable is a named location used to store data in the memory.
+-----------------------
+PYTHON OPERATORS:
+-----------------
+Operators are special symbols in Python that carry out arithmetic or logical computation.
+The value that the operator operates on is called the operand.
+
+ARITHMETIC OPERATORS:
+======================
+1) +	 Add two operands or unary plus	x + y
++2
+2) -	 Subtract right operand from the left or unary minus	x - y
+-2
+3) *	Multiply two operands	x * y
+4) /	Divide left operand by the right one (always results into float)	x / y
+5) %	Modulus - remainder of the division of left operand by the right	x % y (remainder of x/y)
+6) //	Floor division - division that results into whole number adjusted to the left in the number line	x // y
+7) **	Exponent - left operand raised to the power of right	x**y (x to the power y)
+
+COMPARISON OPERATORS:
+=====================
+Comparison operators are used to compare values.
+It either returns True or False according to the condition.
+
+1) >	Greater that - True if left operand is greater than the right	x > y
+2) <	Less that - True if left operand is less than the right	x < y
+3) ==	Equal to - True if both operands are equal	x == y
+4) !=	Not equal to - True if operands are not equal	x != y
+5) >=	Greater than or equal to - True if left operand is greater than or equal to the right	x >= y
+6) <=	Less than or equal to - True if left operand is less than or equal to the right	x <= y
+
+
+
+
