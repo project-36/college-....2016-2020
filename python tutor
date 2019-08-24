@@ -252,5 +252,7 @@ ASCII and Unicode are some of the popular encoding used.
 
 In Python, string is a sequence of Unicode character
 
-    
+Strings are immutable. This means that elements of a string cannot be changed once it has been assigned. 
+We can simply reassign different strings to the same name.
+
 
