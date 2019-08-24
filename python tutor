@@ -92,6 +92,130 @@ Logical operators are the and, or, not operators.
 1) and	True if both the operands are true	x and y
 2) or	True if either of the operands is true	x or y
 3) not	True if operand is false (complements the operand)	not x
+------------------------------------------------------
+BITWISE OPEARTORS:
+==================
+Bitwise operators act on string of binary digits
+
+It operates bit by bit
+EG:
+
+Let x = 10 (0000 1010 in binary) and y = 4 (0000 0100 in binary)
+
+1) & 	Bitwise AND 	x& y = 0 (0000 0000)
+2) | 	Bitwise OR 	x | y = 14 (0000 1110)
+3) ~ 	Bitwise NOT 	~x = -11 (1111 0101)
+4) ^ 	Bitwise XOR 	x ^ y = 14 (0000 1110)
+5) >> 	Bitwise right shift 	x>> 2 = 2 (0000 0010)
+6) << 	Bitwise left shift 	x<< 2 = 40 (0010 1000)
+
+ASSIGNMENT OPERATORS:
+=====================
+Assignment operators are used in Python to assign values to variables.
+
+1) = 	x = 5 	x = 5
+2) += 	x += 5 	x = x + 5
+3) -= 	x -= 5 	x = x - 5
+4) *= 	x *= 5 	x = x * 5
+5) /= 	x /= 5 	x = x / 5
+6) %= 	x %= 5 	x = x % 5
+7) //= 	x //= 5 	x = x // 5
+8) **= 	x **= 5 	x = x ** 5
+9) &= 	x &= 5 	x = x & 5
+10) |= 	x |= 5 	x = x | 5
+11) ^= 	x ^= 5 	x = x ^ 5
+12) >>= 	x >>= 5 	x = x >> 5
+13) <<= 	x <<= 5 	x = x << 5
+
+==> is and is not are the identity operators in Python.
+==> in and not in are the membership operators in Python
+
+Operator precedence rule in Python:
+===================================
+
+() 	Parentheses            =======>highest priority
+** 	Exponent
++x, -x, ~x 	Unary plus, Unary minus, Bitwise NOT
+*, /, //, % 	Multiplication, Division, Floor division, Modulus
++, - 	Addition, Subtraction
+<<, >> 	Bitwise shift operators
+& 	Bitwise AND
+^ 	Bitwise XOR
+| 	Bitwise OR
+==, !=, >, >=, <, <=, is, is not, in, not in 	Comparisions, Identity, Membership operators
+not 	Logical NOT
+and 	Logical AND
+or 	Logical OR               =====>least priority
 
 
+--------------------------------------------------------------------------
+NAMESPACES:
+===========
+Name (also called identifier) is simply a name given to objects. 
+Everything in Python is an object. 
 
+For example, when we do the assignment a = 2, here 2 is an object stored in memory and a is the name we associate it with. 
+We can get the address (in RAM) of some object through the built-in function, id().
+eg:
+Initially, an object 2 is created and the name a is associated with it,
+when we do a = a+1, a new object 3 is created and now a associates with this object.
+
+
+==> namespace is a collection of names.
+==>In Python, you can imagine a namespace as a mapping of every name, you have defined, to corresponding objects.
+----------------------------------------------------------
+PYTHON FLOW CONTROL STATEMENTS:
+------------------------------------
+
+The if…elif…else statement is used in Python for decision making.
+-------------------------------------
+PYTHON LOOPS:
+==============
+FOR LOOP:
+----------
+The for loop in Python is used to iterate over a sequence (list, tuple, string) or other iterable objects. 
+Iterating over a sequence is called traversal.
+-------------------------------------------------
+We can generate a sequence of numbers using range() function
+-------------------------------------------------------
+WHILE LOOP:
+------------
+The while loop in Python is used to iterate over a block of code as long as the test expression (condition) is true.
+
+BREAK :
+-------
+The break statement terminates the loop containing it. 
+Control of the program flows to the statement immediately after the body of the loop.
+
+CONTINUE:
+---------
+The continue statement is used to skip the rest of the code inside a loop for the current iteration only.
+Loop does not terminate but continues on with the next iteration.
+
+PASS:
+------
+In Python programming, pass is a null statement. 
+The difference between a comment and pass statement in Python is that,
+while the interpreter ignores a comment entirely, pass is not ignored.
+
+However, nothing happens when pass is executed. It results into no operation (NOP).
+
+PYTHON FUNCTIONS:
+==================
+
+
+function is a group of related statements that perform a specific task.
+Furthermore, it avoids repetition and makes code reusable.
+
+SYNTAX:
+=======
+
+def function_name(parameters):
+	"""docstring"""
+	statement(s)
+ 
+ 
+ The first string after the function header is called the docstring and is short for documentation string.
+ It is used to explain in brief, what a function does.
+ 
+ __doc__ attribute of the function.
