@@ -85,6 +85,13 @@ It either returns True or False according to the condition.
 5) >=	Greater than or equal to - True if left operand is greater than or equal to the right	x >= y
 6) <=	Less than or equal to - True if left operand is less than or equal to the right	x <= y
 
+LOGICAL OPERATORS:
+==================
+Logical operators are the and, or, not operators.
+
+1) and	True if both the operands are true	x and y
+2) or	True if either of the operands is true	x or y
+3) not	True if operand is false (complements the operand)	not x
 
 
 
