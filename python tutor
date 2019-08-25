@@ -255,4 +255,37 @@ In Python, string is a sequence of Unicode character
 Strings are immutable. This means that elements of a string cannot be changed once it has been assigned. 
 We can simply reassign different strings to the same name.
 
+Introduction to OOPs in Python:
+================================
+Python is a multi-paradigm programming language. Meaning, it supports different programming approach.
+
+One of the popular approach to solve a programming problem is by creating objects. This is known as Object-Oriented Programming (OOP).
+
+An object has two characteristics:
+
+attributes
+behavior
+Let's take an example:
+
+Parrot is an object,
+
+name, age, color are attributes
+singing, dancing are behavior
+
+In Python, the concept of OOP follows some basic principles:
+============================================================
+
+Inheritance	A process of using details from a new class without modifying existing class.
+Encapsulation	Hiding the private details of a class from other objects.
+Polymorphism	A concept of using common operation in different ways for different data input.
+
+CLASS:
+======
+Class
+A class is a blueprint for the object.
+
+OBJECT:
+=======
+An object (instance) is an instantiation of a class.
+When class is defined, only the description for the object is defined.
 
