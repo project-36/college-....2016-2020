@@ -155,7 +155,22 @@ def toh(n,a,b,c):
         print("move a disc from {} to {}".format(a,c))
         toh(n-1,b,a,c)
 toh(n,a,b,c)
-
+--------------------------------------------------------------------------
+13.balanced paranthesis
+---------------------------------------------------------------------------
+def para(s):
+    c=[')',']','}']
+    k=None
+    for i in s:
+        if i in c:
+            break
+        else:
+            k= s.count('(')==s.count(')') and s.count('{')==s.count('}') and s.count('[')==s.count(']') 
+        print(k)
+    
+        
+    
+para(')')
 
 
 numerator=int(input())
