@@ -158,19 +158,21 @@ toh(n,a,b,c)
 --------------------------------------------------------------------------
 13.balanced paranthesis
 ---------------------------------------------------------------------------
-def para(s):
-    c=[')',']','}']
-    k=None
-    for i in s:
-        if i in c:
-            break
-        else:
-            k= s.count('(')==s.count(')') and s.count('{')==s.count('}') and s.count('[')==s.count(']') 
-        print(k)
+def f1(s):
+  k=None
+  l=[']','}',')']
+  for i in s:
+    if i in l:
+      break
+    else:
+      k=s.count('(')==s.count(')') and s.count('{')==s.count('}') and s.count('[')==s.count(']')
+  if(k):
+    print("balanced")
+  else:
+    print("unbalanced")
+f1('(abc)[1[]')
+o/p:unbalanced
     
-        
-    
-para(')')
 
 
 numerator=int(input())
