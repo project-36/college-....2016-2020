@@ -199,6 +199,27 @@ for i in range(c):
 for i in range(len(l)):
   print(l[i])
 ------------------------------------------------------------------------------------
+16.Find the saddle point in a matrix----(min val in row = max value in column)
+-------------------------------------------------------------------------------------
+a=[[1,2,3],
+   [4,5,6],
+   [7,8,9]]
+
+l=[]
+s=[]
+c=int(input())
+r=int(input())
+for i in range(c):
+  for j in range(r):
+    l.append(a[j][i])
+  
+  for k in range(r):
+    if(max(l)==min(a[k])):
+      s.append(min(a[k]))
+      
+  l.clear()
+print(s)
+----------------------------------------------------------------------------------
 
 numerator=int(input())
 denominator=int(input())
