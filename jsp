@@ -279,3 +279,83 @@ firstname, lastname, username, password
 ALTER TABLE data 
 ADD COLUMN accid int
 ADD COLUMN amount int;
+=================================================================================================================
+S1.JSP
+================================================================================================================
+<%-- 
+    Document   : transactions
+    Created on : 24 Oct, 2019, 2:40:57 PM
+    Author     : wad3
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>transactions</title>
+    </head>
+    <body>
+        <h1>SEARCH FOR ACCOUNT DETAILS!!!!!</h1>
+        <BR><BR><HR><HR>
+        <form method="post" action="search.jsp">
+            ACCID:<input type="text" name="accid">
+            <input type="submit" name="sub" value="submit">
+        </form>
+        <BR><HR><HR>
+        <H2>DISPLAY ALL</H2>
+        <HR><HR><BR>
+        <form method="post" action="display.jsp">
+            <input type="submit" name="sub" value="display">
+        </form>
+    </body>
+</html>
+==================================================================================================================
+DISPLAY.JSP
+==================================================================================================================
+<%@ page import ="java.sql.*" %>
+<%
+    String accid = request.getParameter("accid");
+    Class.forName("org.postgresql.Driver");
+    Connection con = DriverManager.getConnection("jdbc:postgresql://localhost:5432/postgres",
+            "postgres", "root");
+    Statement st = con.createStatement();
+    ResultSet rs = st.executeQuery("select * from data ");
+    out.println("<html><body><table border=1>");
+    out.println("<h2>ALL DETAILS OF ACCOUNT HOLDERS</H2><BR><HR><HR><BR>");
+        while(rs.next())
+        {
+
+            out.println("<tr><td>first name</td><td>"+rs.getString("firstname")+"</td></tr><tr><td>last name</td><td>"+rs.getString("lastname")+"</td></tr><td>accounttype</td><td>"+rs.getString("accounttype")+"</td></tr><tr><td>amount</td><td>"+rs.getString("amount")+"</td></tr>");
+
+
+        }
+            out.println("</table></body></html>");
+        con.close();
+    
+%>
+=====================================================================================================================
+SEARCH.JSP
+=====================================================================================================================
+<%@ page import ="java.sql.*" %>
+<%
+    String accid = request.getParameter("accid");
+    Class.forName("org.postgresql.Driver");
+    Connection con = DriverManager.getConnection("jdbc:postgresql://localhost:5432/postgres",
+            "postgres", "root");
+    Statement st = con.createStatement();
+    ResultSet rs = st.executeQuery("select * from data  WHERE accid='"+accid+"'");
+    out.println("<html><body><table border=1>");
+        while(rs.next())
+        {
+
+            out.println("<br>ACCOUNT ID:"+rs.getString("accid"));
+            out.println("<tr><td>first name</td><td>"+rs.getString("firstname")+"</td></tr><tr><td>last name</td><td>"+rs.getString("lastname")+"</td></tr><td>accounttype</td><td>"+rs.getString("accounttype")+"</td></tr><tr><td>amount</td><td>"+rs.getString("amount")+"</td></tr>");
+
+
+        }
+            out.println("</table></body></html>");
+        con.close();
+    
+%>
+======================================================================================================================
