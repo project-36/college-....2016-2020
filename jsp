@@ -308,8 +308,16 @@ S1.JSP
         <form method="post" action="display.jsp">
             <input type="submit" name="sub" value="display">
         </form>
+        <BR><HR><HR>
+        <H2>DELETE ACCOUNT!</H2>
+        <HR><HR><BR>
+        <form method="post" action="delete.jsp">
+            ACCID:<input type="text" name="accid">
+            <input type="submit" name="sub" value="delete">
+        </form>
     </body>
 </html>
+
 ==================================================================================================================
 DISPLAY.JSP
 ==================================================================================================================
@@ -359,3 +367,17 @@ SEARCH.JSP
     
 %>
 ======================================================================================================================
+DELETE.JSP
+======================================================================================================================
+<%@ page import ="java.sql.*" %>
+<%
+    String accid = request.getParameter("accid");
+    Class.forName("org.postgresql.Driver");
+    Connection con = DriverManager.getConnection("jdbc:postgresql://localhost:5432/postgres",
+            "postgres", "root");
+    Statement st = con.createStatement();
+    int i = st.executeUpdate("DELETE FROM data WHERE accid='"+accid+"'");
+    out.println("DELETED SUCCESSFULLY!");
+        con.close();
+    
+%>
