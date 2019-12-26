@@ -1,0 +1,65 @@
+  1.for printing the values in an unordered_map
+  ========================================================
+    for(auto i:hashtable)
+    {
+        cout<<"\n";
+        cout<<i.first<<"\t"<<i.second;
+    }
+=================================================================
+ 2.FIND THE LARGEST RANGE FROM A GIVEN ARRAY
+ ====================================================================
+
+#include <iostream>
+#include <vector>
+#include <unordered_map>
+
+using namespace std;
+vector<int> longestrange(vector<int> a)
+{
+    vector<int> bestrange={};
+   int longestlength=0;
+   unordered_map<int,bool> hashtable={};
+
+    for(int i:a)
+    {
+        hashtable[i]=true;
+    }
+    for(int i:a)
+    {
+        if(!hashtable[i])
+        {
+            continue;
+        }
+        int currlength=1;
+        hashtable[i]=false;
+        int left=i-1;
+        int right =i+1;
+        while (hashtable.find(left)!=hashtable.end())
+        {
+            hashtable[left]=false;
+            currlength+=1;
+            left-=1;
+        }
+        while (hashtable.find(right)!=hashtable.end())
+        {
+            hashtable[right]=false;
+            currlength+=1;
+            right+=1;
+        }
+        if(currlength>longestlength)
+        {
+            longestlength=currlength;
+            bestrange={left+1,right-1};
+            }
+        }
+        return bestrange;
+ 
+}
+
+
+int main()
+{
+   vector<int> a={1,2,3};
+   longestrange(a);
+
+}
