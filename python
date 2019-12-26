@@ -220,6 +220,40 @@ for i in range(c):
   l.clear()
 print(s)
 ----------------------------------------------------------------------------------
+17.find the longest range?
+------------------------------------------------------------------------------------
+a=[0,3,1,4,5,6]
+hashtable={}
+bestrange=[]
+longestlength=0
+for i in a:
+    hashtable[i]=True
+for i in a:
+    if not hashtable[i]:
+        continue
+    hashtable[i]=False
+    currentlength=1
+    left=i-1
+    right=i+1
+    while left in hashtable :
+        hashtable[left]=False
+        currentlength+=1
+        left-=1
+        
+    while right in hashtable:
+        hashtable[right]=False
+        currentlength+=1
+        right+=1
+        
+    if currentlength>longestlength:
+        longestlength=currentlength
+        bestrange=[left+1,right-1]
+    
+print(bestrange)
+--------------------------------------------------------------------------------------------------------
+18.
+-----------------------------------------------------------------------------------------------------
+
 
 numerator=int(input())
 denominator=int(input())
