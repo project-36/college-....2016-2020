@@ -1,0 +1,46 @@
+1.TWO NUMBER SUM:
+======================================
+FIRST SOLUTION:O(N^2)TIME COMPLEXITY AND O(1) SPACE COMPLEXITY
+---------------------------------------------------------------
+def twosum(array,target):
+    l=[]
+    for i in range(len(array)-1):
+        firstnum=array[i]
+        for j in range(i+1,len(array)):
+            secondnum=array[j]
+            if (firstnum+secondnum==target):
+                l.append([firstnum,secondnum])
+        print(l)
+        l.clear()
+twosum([1,2,3,4],5)
+-----------------------------------------
+SECOND SOLUTION:O(N)TIME COMPLEXITY AND O(N) SPACE COMPLEXITY
+-------------------------------------------------------------
+def twosum1(array,target):
+    hashtable={}
+    for i in array:
+        if target-i in hashtable:
+            return [target-i,i]
+        else:
+            hashtable[i]=True
+    return[]
+twosum1([3,5,-4,8,11,1,-1,6],10)
+----------------------------------------------------------------
+THIRD SOLUTION:O(nlogn) time| O(1) space
+----------------------------------------------------------------
+def twosum2(array,target):
+    array.sort()
+    leftpointer=0
+    rightpointer=len(array)-1
+    while leftpointer<rightpointer:
+        currentsum=array[leftpointer]+array[rightpointer]
+        if(currentsum==target):
+            return [array[leftpointer],array[rightpointer]]
+        elif(currentsum<target):
+            leftpointer+=1
+        elif(currentsum>target):
+            rightpointer-=1
+    return []
+twosum2([3,5,-4,8,11,1,-1,6],10)
+==================================================================
+2.
