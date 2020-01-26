@@ -296,8 +296,27 @@ def swap(a,i,j):
     a[i],a[j]=a[j],a[i]
 perm([1,2,3])
 --------------------------------------------------------------------------------
-21.
+21.BALANCED PARANTHESIS IN ORDER:
 ------------------------------------------------------------------------------------
+def balanced_paranthesis(s):
+    o="({["
+    c=")}]"
+    matching={")":"(","}":"{","]":"["}
+    stack=[]
+    for i in s:
+        if i in o:
+            stack.append(i)
+        elif i in c:
+            if len(stack)==0:
+                return False
+            elif stack[-1]==matching[i]:
+                stack.pop()
+            else:
+                return False
+    return len(stack)==0
+ -------------------------------------------------------------------------------------
+ 22.
+ -------------------------------------------------------------------------------------
 
 numerator=int(input())
 denominator=int(input())
