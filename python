@@ -315,8 +315,24 @@ def balanced_paranthesis(s):
                 return False
     return len(stack)==0
  -------------------------------------------------------------------------------------
- 22.
+ 22. Write a function which accepts an integer array and its size and returns the maximum index difference
+ i.e. (i-j) such that array[i] < array[j] and i < j. If there is no such case, return -1 .
  -------------------------------------------------------------------------------------
+a=list(map(int,input().split(' ')))
+l=len(a)
+m=[]
+for i in  range(l):
+    for k in range(i+1,l):
+        if(a[i]<a[k] and i<k):
+            m.append(abs(i-k))
+print(m)
+if(not m):
+    print(-1)
+else:
+    print(max(m))
+------------------------------------------------------------------------------------------------
+23.
+--------------------------------------------------------------------------------------------------
 
 numerator=int(input())
 denominator=int(input())
